@@ -1,7 +1,7 @@
 <?php
 
 if (!function_exists("println")) {
-    if (PHP_VERSION_ID <= 50600) {
+    if (PHP_VERSION_ID >= 50600) {
         eval('
             function println(...$strings) {
                 foreach ($strings as $string) {
